@@ -63,7 +63,7 @@ const Nave = () => {
         </Navbar>
           </NavContainer>
             <Routes>
-                <Route path='/' element={<Home/>}/>
+                <Route exact path='/'  element={<Home/>}/>
                 
                 <Route path='/quem-somos' element={<QuemSomos/>} />
                 <Route path='/coleta-residencia' element={<ColetaSele/>} />
