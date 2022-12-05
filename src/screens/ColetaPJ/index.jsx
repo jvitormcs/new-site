@@ -4,7 +4,7 @@ import Segundo from "../../assets/segundo.png"
 import Terceiro from "../../assets/terceiro.png"
 import { Container, TopContainer, TitleContainer, MainTitle, SubTitle, Btn, WaveContainer, BgVerde, SolutionText, InfoSolutionView,  ViewFunciona, ViewCards, TitleFunciona, Title,  FormSubTitle, FormContainer, FormRes, ResInput, FormButton, ViewForm, ImageCotratar, TitleRealixo, TextAlert } from "./styles"
 import Funciona from "../../components/Funciona"
-import ImagemSede from "../../assets/Filial.png"
+import ImagemSede from "../../assets/filial.png"
 import { BASE_URL } from "../../Config/GLOBAL_URL" 
 
 
