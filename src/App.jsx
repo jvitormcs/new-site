@@ -1,5 +1,5 @@
 
-import Nav from './components/Nav'
+import Nave from './components/Nav'
 import { Container } from './styles'
 
 
@@ -9,7 +9,7 @@ function App() {
     <Container className="App">
 
       
-    <Nav /> 
+    <Nave /> 
     </Container>
   )
 }

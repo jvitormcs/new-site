@@ -34,16 +34,16 @@ const Menu = () => {
                     title="Serviços"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="/coleta-residencia">Coleta seletiva para residências</NavDropdown.Item>
+                    <Link to={"/coleta-residencia"}>Coleta seletiva para residências</Link>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="/coleta-empresas">Coleta seletiva para empresas</NavDropdown.Item>
+                    <Link to={"/coleta-empresas"}>Coleta seletiva para empresas</Link>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="/logistica-reversa">Logística reversa</NavDropdown.Item>
+                    <Link to={"/logistica-reversa"}>Logística reversa</Link>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="/lixo-zero">Evento lixo zero</NavDropdown.Item>
+                    <Link to={"/lixo-zero"}>Evento lixo zero</Link>
                   </NavDropdown>
                   <Nav.Link href='https://blog.realixo.com.br'>Blog</Nav.Link>
-                  <Nav.Link href='/list'>Fale Conosco</Nav.Link>
+                  <Link to={'/list'}>Fale Conosco</Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
