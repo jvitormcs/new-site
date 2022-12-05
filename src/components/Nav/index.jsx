@@ -1,16 +1,16 @@
 import {BrowserRouter as Router , Routes, Route, Link } from 'react-router-dom'
-import Home from '../Home'
+import Home from '../../screens/Home'
 import Menu from '../Menu';
 import Footer from '../Footer';
-import QuemSomos from '../QuemSomos';
-import ColetaSele from '../ColetaSele';
-import ColetaPJ from '../ColetaPJ';
-import Logistica from '../LogisticaRev';
-import LixoZero from '../GestaoResi';
-import AbraFili from '../AbraFili';
-import TrabalheCo from '../TrabalheConosco';
-import Agradecimento from '../Agradecimento';
-import FaleConosco from '../FaleConosco';
+import QuemSomos from '../../screens/QuemSomos';
+import ColetaSele from '../../screens/ColetaSele';
+import ColetaPJ from '../../screens/ColetaPJ';
+import Logistica from '../../screens/LogisticaRev';
+import LixoZero from '../../screens/GestaoResi';
+import AbraFili from '../../screens/AbraFili';
+import TrabalheCo from '../../screens/TrabalheConosco';
+import Agradecimento from '../../screens/Agradecimento';
+import FaleConosco from '../../screens/FaleConosco';
 const Nav = () => {
 
     return(
