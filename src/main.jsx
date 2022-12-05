@@ -7,11 +7,12 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
+import QuemSomos from './screens/QuemSomos';
 
 const router = createBrowserRouter([
   {
     path: "/teste",
-    element: <div>Teste</div>,
+    element: <QuemSomos/>,
   },
 ]);
 
