@@ -1,4 +1,4 @@
-import {BrowserRouter as Router , Routes, Route, Link } from 'react-router-dom'
+import {BrowserRouter , Routes, Route, Link } from 'react-router-dom'
 import Home from '../../screens/Home'
 import Menu from '../Menu';
 import Nav from 'react-bootstrap/Nav';
@@ -22,7 +22,7 @@ import { NavContainer } from './styles';
 const Nave = () => {
     let expand = 'md'
     return(
-        <Router>
+        <BrowserRouter>
             
             {/* <NavContainer>
       <Navbar expand={expand} className="mb-3">
@@ -76,7 +76,7 @@ const Nave = () => {
                 <Route path='/list' element={<FaleConosco/>} />
             </Routes>
             <Footer />
-        </Router>
+        </BrowserRouter>
     )
 
 }
