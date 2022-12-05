@@ -17,9 +17,9 @@ const Nav = () => {
         <Router>
             
             <Menu />
-            
+            <Link to={'/quem-somos'}>Quem Somos</Link>
             <Routes>
-                <Route path='/' element={<QuemSomos/>}/>
+                <Route path='/' element={<Home/>}/>
                 
                 <Route path='/quem-somos' element={<QuemSomos/>} />
                 <Route path='/coleta-residencia' element={<ColetaSele/>} />
