@@ -59,7 +59,7 @@ const Footer = () => {
                 <Link href="/">Home</Link>
                 <Link href="/quem-somos">Quem somos</Link>
                 <Link href="">Blog</Link>
-                <Link href="/trabalhe-conosco">Trabalhe Conosco</Link>
+                <Link href="/#/trabalhe-conosco">Trabalhe Conosco</Link>
                 <Link href="/investidores/pt/">Invista</Link>
                 <Link href="/investidores/eng/">Invest</Link>
                 </GroupInfo>
