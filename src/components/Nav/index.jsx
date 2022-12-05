@@ -17,7 +17,6 @@ const Nav = () => {
         <Router>
             
             <Menu />
-            <Link to={'/quem-somos'}>Quem Somos</Link>
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 
