@@ -19,7 +19,7 @@ const Nav = () => {
             <Menu />
             
             <Routes>
-                <Route path='/' element={<Home/>}/>
+                <Route path='/' element={<QuemSomos/>}/>
                 
                 <Route path='/quem-somos' element={<QuemSomos/>} />
                 <Route path='/coleta-residencia' element={<ColetaSele/>} />
