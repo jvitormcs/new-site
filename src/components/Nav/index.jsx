@@ -24,7 +24,7 @@ const Nave = () => {
     return(
         <Router>
             
-            <NavContainer>
+            {/* <NavContainer>
       <Navbar expand={expand} className="mb-3">
           <Container fluid>
           <Navbar.Brand href="/"><img src={Logo} width="150px" className='logo'/></Navbar.Brand>
@@ -61,7 +61,7 @@ const Nave = () => {
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
-          </NavContainer>
+          </NavContainer> */}
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 
