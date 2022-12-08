@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 /* export const NavContainer = styled.nav`
@@ -77,21 +78,44 @@ export const NavContainer = styled.div`
    padding-right: 50px;
    font-size: 1.2rem;
    color: #263238;
-   font-weight: 500;
+   font-weight: 550;
 
 
    li{
     list-style: none;
     font-weight: 550;
     padding-right: 25px;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
    }
 
    a{
-    color: #263238;
-    text-decoration: none;
+    color: #263238!important;
+    padding-right: 30px;
+    text-decoration: none!important;
    }
 
+   .dropdown{
+      padding-right: 30px;
+   }
+
+   .dropdown-menu.show{
+
+      text-align: left;
+      padding: 1rem;
+      width: 20rem;
+
+   }
+   .dropdown-menu.show a{
+
+      color: #00b09c!important;
+
+   }
+   .dropdown-menu.show a:hover{
+
+      color: #027467!important;
+
+   }
+   
    .logo{
 
       height: auto;
@@ -136,10 +160,38 @@ export const NavContainer = styled.div`
       text-align: right;
    }
 
+
 `
 
 export const ContentMenu = styled.div`
 
    
 
+`
+
+export const CustomLink = styled(Link)`
+
+   
+    color: #263238!important;
+    padding-right: 30px;
+    text-decoration: none!important;   
+    font-weight: 600;
+
+    @media only screen and (min-width: 319px) and (max-width: 450px) {
+    
+    margin-bottom: 10px;
+
+}
+
+`
+export const CustomLinkDrop = styled(Link)`
+
+   
+    color: #263238!important;
+    text-decoration: none!important;   
+    font-weight: 600;
+
+   &:hover{
+      color: #027467;
+   }
 `

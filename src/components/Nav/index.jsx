@@ -1,4 +1,4 @@
-import {HashRouter , Routes, Route, Link } from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Home from '../../screens/Home'
 import Menu from '../Menu';
 import Nav from 'react-bootstrap/Nav';
@@ -17,12 +17,12 @@ import AbraFili from '../../screens/AbraFili';
 import TrabalheCo from '../../screens/TrabalheConosco';
 import Agradecimento from '../../screens/Agradecimento';
 import FaleConosco from '../../screens/FaleConosco';
-import { NavContainer } from './styles';
+import { NavContainer, CustomLink, CustomLinkDrop } from './styles';
 
 const Nave = () => {
     let expand = 'md'
     return(
-        <HashRouter>
+        <Router>
             
             <NavContainer>
       <Navbar expand={expand} className="mb-3">
@@ -41,21 +41,23 @@ const Nave = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end align-items-md-center flex-grow-1 pe-3">
-                  <Link to={'/quem-somos'}>Quem Somos</Link>
+                  
+                  <CustomLink to={'/quem-somos'}>Quem Somos</CustomLink>
                   <NavDropdown
                     title="Serviços"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <Link to={"/coleta-residencia"}>Coleta seletiva para residências</Link>
+                    <CustomLinkDrop to={"/coleta-residencia"}>Coleta seletiva para residências</CustomLinkDrop>
                     <NavDropdown.Divider />
-                    <Link to={"/coleta-empresas"}>Coleta seletiva para empresas</Link>
+                    <CustomLinkDrop to={"/coleta-empresas"}>Coleta seletiva para empresas</CustomLinkDrop>
                     <NavDropdown.Divider />
-                    <Link to={"/logistica-reversa"}>Logística reversa</Link>
+                    <CustomLinkDrop to={"/logistica-reversa"}>Logística reversa</CustomLinkDrop>
                     <NavDropdown.Divider />
-                    <Link to={"/lixo-zero"}>Evento lixo zero</Link>
+                    <CustomLinkDrop to={"/lixo-zero"}>Evento lixo zero</CustomLinkDrop>
                   </NavDropdown>
-                  <Nav.Link href='https://blog.realixo.com.br'>Blog</Nav.Link>
-                  <Link to={'/list'}>Fale Conosco</Link>
+                  <CustomLink hrefLang='https://blog.realixo.com.br'>Blog</CustomLink>
+                  <CustomLink to={'/fale-conosco'}>Fale Conosco</CustomLink>
+                 
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
@@ -73,10 +75,10 @@ const Nave = () => {
                 <Route path='/abra-filial' element={<AbraFili/>} />
                 <Route path='/trabalhe-conosco' element={<TrabalheCo/>} />
                 <Route path='/agradecimento' element={<Agradecimento/>} />
-                <Route path='/list' element={<FaleConosco/>} />
+                <Route path='/fale-conosco' element={<FaleConosco/>} />
             </Routes>
             <Footer />
-        </HashRouter>
+        </Router>
     )
 
 }

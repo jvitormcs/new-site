@@ -50,9 +50,7 @@ const Logistica = () => {
               body: JSON.stringify(body)
             }).then(async response => { await response.status
   
-              if(response.status == 200 || response.ok == true ){
-                  window.location.href = '/agradecimento'
-              }
+              window.location.href = '/agradecimento'
           })
 
     }

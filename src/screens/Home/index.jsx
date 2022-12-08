@@ -16,11 +16,13 @@ import Nicole from '../../assets/Nicole.png'
 import Eliane from '../../assets/Eliane.png'
 import Filial from '../../assets/filial.png'
 import Invest from '../../assets/invest.png'
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 
 const Home = () => {
-    
+
+    const navigate = useNavigate()
+
     const Impact = [
 
         {
@@ -151,7 +153,10 @@ const Home = () => {
                     <GroupFilial>
                     <FilialTitle>Abra uma filial</FilialTitle>
                     <FilialDescription>Você também pode colocar a mão na massa e fazer parte desta rede de pessoas que trabalham diretamente pela construção de um mundo mais sustentável e sem lixo. Clique no botão abaixo para saber como ter uma franquia da Realixo na sua cidade.</FilialDescription>
-                    <Link to={'/abra-filial'}><BtnRows>Saiba mais</BtnRows></Link>
+                        <BtnRows onClick={()=> {
+                            scrollTo({top: 0, behavior: "smooth"})
+                            navigate('/abra-filial')
+                        }}>Saiba mais</BtnRows>
                     </GroupFilial>
                 </RowFilial>
 
