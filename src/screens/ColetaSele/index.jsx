@@ -49,8 +49,8 @@ const ColetaSele = () => {
     const plan = [
 
         {title: 'Básico', description: 'Sempre que você quiser, leve seus resíduos recicláveis​​ e orgânicos até a nossa sede.', valor: 'R$ 14,90/mês'},
-        {title: 'Com coleta quinzenal', description: 'Nós coletamos os seus resíduos recicláveis e orgânicos uma vez por mês no conforto da sua casa!', valor: 'R$ 22,00/mês'},
-        {title: 'Com coleta semanal', description: 'Nós coletamos os seus resíduos recicláveis e orgânicos a cada quinze dias no conforto da sua casa!', valor: 'R$ 44,00/mês'}
+        {title: 'Com coleta quinzenal', description: 'Nós coletamos os seus resíduos recicláveis e orgânicos no conforto da sua casa!', valor: 'R$ 22,00/mês'},
+        {title: 'Com coleta semanal', description: 'Nós coletamos os seus resíduos recicláveis e orgânicos conforto da sua casa!', valor: 'R$ 44,00/mês'}
 
     ]
 

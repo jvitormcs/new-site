@@ -98,7 +98,7 @@ export const Btn = styled.button`
 export const WaveContainer = styled.div`
 
     background-image: url(${WaveBranco});
-    padding: 15%;
+    padding: 8%;
     background-repeat: no-repeat;
     background-position: top center;
     margin-bottom: -150px;

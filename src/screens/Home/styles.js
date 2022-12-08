@@ -85,6 +85,19 @@ export const Btn = styled.button`
         background-color: #027467;
     }
 `;
+export const BtnBranco = styled.button`
+
+
+    color: #00b09c;
+    background-color: #f9f9f9;
+    padding: 6px 15px;
+    border: none;
+    border-radius: 20px;
+
+    :hover{
+        background-color: #027467;
+    }
+`;
 
 export const WaveContainer = styled.div`
 
