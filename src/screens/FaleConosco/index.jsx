@@ -16,7 +16,7 @@ const FaleConosco = () => {
 
             <Title>Fale Conosco</Title>
             <TextDescription>Clique no botão abaixo e envie sua mensagem no nosso WhatsApp. Assim que possível nosso time de comunicação entrará em contato para responder suas dúvidas.</TextDescription>       
-            <Btn onPress={()=> {
+            <Btn onClick={}={()=> {
                 window.location.href = `https://wa.me/5511912417855`
             }}><FaWhatsapp size={25} color="#f9f9f9" /> Chamar no WhatsApp</Btn>
         </TextContainer>
