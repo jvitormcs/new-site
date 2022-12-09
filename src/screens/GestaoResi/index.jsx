@@ -71,9 +71,7 @@ const LixoZero = () => {
                 <TitleContainer>
                     <MainTitle>Realize seu evento lixo zero com a Realixo</MainTitle>
                     <SubTitle>Temos o compromisso de readequar a forma como lidamos com todo o resíduo sólido que é gerado em pequenos, médios e grandes eventos. Por meio da reciclagem e da compostagem, além da informação e conscientezação, promovemos a realização de eventos lixo zero.</SubTitle>
-                    <Btn onClick={() => {
-                        window.location.href = `https://wa.me/5511912417855`
-                    }}>Saiba Mais</Btn>
+                    
                 </TitleContainer>
 
                 
@@ -92,7 +90,9 @@ const LixoZero = () => {
 
                     </ViewCards>
 
-
+                    <Btn onClick={() => {
+                        window.location.href = `https://wa.me/5511912417855`
+                    }}>Saiba Mais</Btn>
             </ViewFunciona>
 
 

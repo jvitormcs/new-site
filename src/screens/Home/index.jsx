@@ -5,7 +5,7 @@ import CasaCoracao from "../../assets/casa-coracao.png"
 import Loja from "../../assets/loja.png"
 import Recycle from "../../assets/recycle.png"
 import CirclePlant from "../../assets/planta-circle.png"
-import { Container, TopContainer, TitleContainer, MainTitle, SubTitle, Btn, VideoContainer, WaveContainer, BgVerde, TitleSolution, SolutionText, InfoSolutionView, PaperTexture, Title, Description, BarIcon, CardsContainer, ServicosContainer, DepoimentoContainer, ViewImages, ImageDepoimento, ViewFilInv, RowFilial, RowInvestimento, FilialImage, FilialTitle, InvestImage, InvestTitle, FilialDescription, InvestDescription, GroupFilial, GroupInvest, BtnRows, BtnBranco } from "./styles"
+import { Container, TopContainer, TitleContainer, MainTitle, SubTitle, Btn, VideoContainer, WaveContainer, BgVerde, TitleSolution, SolutionText, InfoSolutionView, PaperTexture, Title, Description, BarIcon, CardsContainer, ServicosContainer, DepoimentoContainer, ViewImages, ImageDepoimento, ViewFilInv, RowFilial, RowInvestimento, FilialImage, FilialTitle, InvestImage, InvestTitle, FilialDescription, InvestDescription, GroupFilial, GroupInvest, BtnRows, BtnBranco, BgVerdeContainer } from "./styles"
 import Cards from "../../components/Cards"
 import Card1 from "../../assets/card1.png"
 import Card2 from "../../assets/card2.png"
@@ -88,7 +88,7 @@ const Home = () => {
 
                 <VideoContainer>
 
-                <iframe width="853" height="480" src="https://www.youtube.com/embed/oo5PAI_41qo" title="REALIXO - POR UMA CIDADE SUSTENTÁVEL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+                <iframe width="583" height="480" src="https://www.youtube.com/embed/AjRnp8zJvGY" title="REALIXO - POR UMA CIDADE SUSTENTÁVEL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
 
                 </VideoContainer>
 
@@ -97,6 +97,8 @@ const Home = () => {
             <WaveContainer></WaveContainer>
 
             <BgVerde>
+                <BgVerdeContainer>
+
                 <img src={bgverdeImage} className={'responsivel'} alt="uma mão de uma pessoa está segurando uma tabua com legumes cortados enquanto a outra mão os derruba em um cesto, no fundo tem cenouras e outros legumes cortados"  />
 
                 <InfoSolutionView>
@@ -107,10 +109,11 @@ const Home = () => {
                 <SolutionText>Com nosso serviço de <strong>coleta de resíduos orgânicos e recicláveis </strong>podemos mudar essa realidade, e você pode fazer parte dessa solução!</SolutionText>
                 </InfoSolutionView>
 
+                </BgVerdeContainer>
+
                 <BtnBranco onClick={() => {
                         window.location.href = `https://wa.me/5511912417855`
                     }}>Saiba mais</BtnBranco>
-
             </BgVerde>
 
             <PaperTexture>

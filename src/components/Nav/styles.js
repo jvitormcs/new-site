@@ -184,6 +184,21 @@ export const CustomLink = styled(Link)`
 }
 
 `
+export const CustomLinkA = styled.a`
+
+   
+    color: #263238!important;
+    padding-right: 30px;
+    text-decoration: none!important;   
+    font-weight: 600;
+
+    @media only screen and (min-width: 319px) and (max-width: 450px) {
+    
+    margin-bottom: 10px;
+
+}
+
+`
 export const CustomLinkDrop = styled(Link)`
 
    

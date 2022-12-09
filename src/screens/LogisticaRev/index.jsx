@@ -63,9 +63,7 @@ const Logistica = () => {
                 <TitleContainer>
                     <MainTitle>Você cuida da sua empresa enquanto nós cuidamos dos seus resíduos</MainTitle>
                     <SubTitle>Você tem um pequeno, médio ou grande negócio e quer que seus clientes vejam na prática o seu <strong>compromisso com o meio ambiente?</strong> Confie o gerenciamento dos resíduos de sua empresa a quem entende do assunto. Faça parte desse movimento e agregue valor ao seu negócio.</SubTitle>
-                    <Btn onClick={() => {
-                        window.location.href = `https://wa.me/5511912417855`
-                    }}>Saiba Mais</Btn>
+                    
                 </TitleContainer>
 
                 
@@ -84,7 +82,9 @@ const Logistica = () => {
 
                     </ViewCards>
 
-
+                    <Btn onClick={() => {
+                        window.location.href = `https://wa.me/5511912417855`
+                    }}>Saiba Mais</Btn>
             </ViewFunciona>
 
 

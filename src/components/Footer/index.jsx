@@ -13,6 +13,21 @@ const Footer = () => {
 
     })
 
+    const handleSendForm = async (body) => {
+
+        fetch(`${BASE_URL}/contact`, {
+            headers:{
+                'Content-Type': 'application/json'
+              },
+              method: 'POST',
+              body: JSON.stringify(body)
+            }).then(async response => { await response.status
+  
+              window.location.href = '/agradecimento'
+          })
+
+    }
+
     useEffect(()=>{
 
         const getLocal = localStorage.getItem('local')
@@ -70,11 +85,13 @@ const Footer = () => {
                 <Title>Fale conosco</Title>
                 <GroupInfo>
 
-                    <input type={"text"} onChange={e => {setMessage({...message, nome: e.target.value})}} placeholder="Seu Nome" />
-                    <input type={"email"} onChange={e => {setMessage({...message, email: e.target.value})}} placeholder="Seu e-mail" />
-                    <Caixa className="caixa" onChange={e => {setMessage({...message, mensagem: e.target.value})}} placeholder="Digite aqui sua mensagem" />
+                    <input type={"text"} onChange={e => {setMessage({...message, nome: e.target.value})}} placeholder="Seu Nome" required/>
+                    <input type={"email"} onChange={e => {setMessage({...message, email: e.target.value})}} placeholder="Seu e-mail" required/>
+                    <Caixa className="caixa" onChange={e => {setMessage({...message, mensagem: e.target.value})}} placeholder="Digite aqui sua mensagem" required/>
                     <Btn onClick={()=>{
-                            console.log(message)
+                         
+                        handleSendForm(message)
+
                     }}>Enviar</Btn>
 
                 </GroupInfo>

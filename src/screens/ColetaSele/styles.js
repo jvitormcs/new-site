@@ -18,7 +18,7 @@ background-position: top center;
 background-repeat: no-repeat;
 @media only screen and (min-width: 319px) and (max-width: 450px) {
     
-    
+    margin-bottom: -300px;
     background-image: url(${ImagemBackgroundM}) ;
 }
 `;
@@ -157,11 +157,11 @@ export const BgBeneficios = styled.div`
 `;
 
 export const ViewFunciona = styled.div`
-    margin-top: 6rem;
+    margin-top: 8rem;
     text-align: center;
     @media only screen and (min-width: 319px) and (max-width: 450px) {
     
-        margin-top: 12rem;
+        margin-top: 8rem;
 
 }
     
@@ -323,7 +323,7 @@ export const ViewCardsDepoimento = styled.div`
     flex-direction: column;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
 }
     
 `

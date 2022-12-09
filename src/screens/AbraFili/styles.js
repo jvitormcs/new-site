@@ -19,7 +19,7 @@ background-repeat: no-repeat;
 @media only screen and (min-width: 319px) and (max-width: 450px) {
     background-image: url(${ImagemBackgroundM}) ;
     padding: 5% 5% 400px 3%;
-
+    margin-bottom: -300px;
 }
 `;
 
@@ -51,7 +51,7 @@ export const SubTitle = styled.p`
 color: #263238;
 @media only screen and (min-width: 319px) and (max-width: 450px) {
     
-    font-weight: 500;
+    font-weight: 600;
 }
 `;
 export const BtnTop = styled.button`
@@ -82,6 +82,10 @@ export const Btn = styled.button`
     :hover{
         background-color: #027467;
     }
+    @media only screen and (min-width: 319px) and (max-width: 450px) {
+    
+    padding: 12px 60px;
+}
 `;
 
 export const WaveContainer = styled.div`
@@ -95,7 +99,7 @@ export const WaveContainer = styled.div`
     background-size: cover;
     padding: 20%;
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: -50px;
 }
 `;
 

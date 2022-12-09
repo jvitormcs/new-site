@@ -97,9 +97,6 @@ const ColetaPJ = () => {
                 <TitleContainer>
                     <MainTitle>Quer que seu negócio tenha um impacto socioambiental positivo?</MainTitle>
                     <SubTitle>Nós da Realixo trabalhamos em prol de uma economia circular, ética e sustentável através do nosso serviço de coleta e destinação correta de resíduos recicláveis e orgânicos de restaurantes, bares, hotéis e condomínios. Faça parte desse movimento e agregue valor ao seu negócio. </SubTitle>
-                    <Btn onClick={() => {
-                        window.location.href = `https://wa.me/5511912417855`
-                    }}>Saiba Mais</Btn>
                 </TitleContainer>
 
                 
@@ -117,7 +114,9 @@ const ColetaPJ = () => {
                     {Caixas?.map((item,index) => <Funciona key={index} icone={item?.icone} texto={item?.texto} />)}
 
                     </ViewCards>
-
+                    <Btn onClick={() => {
+                        window.location.href = `https://wa.me/5511912417855`
+                    }}>Saiba Mais</Btn>
             </ViewFunciona>
 
 

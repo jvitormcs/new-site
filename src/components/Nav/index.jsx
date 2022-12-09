@@ -17,7 +17,7 @@ import AbraFili from '../../screens/AbraFili';
 import TrabalheCo from '../../screens/TrabalheConosco';
 import Agradecimento from '../../screens/Agradecimento';
 import FaleConosco from '../../screens/FaleConosco';
-import { NavContainer, CustomLink, CustomLinkDrop } from './styles';
+import { NavContainer, CustomLink, CustomLinkDrop, CustomLinkA } from './styles';
 
 const Nave = () => {
     let expand = 'md'
@@ -55,7 +55,7 @@ const Nave = () => {
                     <NavDropdown.Divider />
                     <CustomLinkDrop to={"/lixo-zero"}>Evento lixo zero</CustomLinkDrop>
                   </NavDropdown>
-                  <CustomLink hrefLang='https://blog.realixo.com.br'>Blog</CustomLink>
+                  <CustomLinkA href='https://blog.realixo.com.br/'>Blog</CustomLinkA>
                   <CustomLink to={'/fale-conosco'}>Fale Conosco</CustomLink>
                  
                 </Nav>

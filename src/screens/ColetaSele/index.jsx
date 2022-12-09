@@ -9,12 +9,44 @@ import GreenCalendar from "../../assets/green-calendar.png"
 import WhitePlant from "../../assets/white-plant.png"
 import GreenCo from "../../assets/green-co.png"
 import WhiteRecycle from "../../assets/white-recycle.png"
-import { Container, TopContainer, TitleContainer, MainTitle, SubTitle, Btn, VideoContainer, WaveContainer, BgVerde, SolutionText, InfoSolutionView,  ViewFunciona, ViewCards, TitleImpact, TitleFunciona, Planos, Title, ServicosContainer, ContainerDepoimento, ViewCardsDepoimento, ImagemDepoimento, FormSubTitle, FormContainer, FormRes, ResInput, FormButton, ViewForm, ViewCardsPlan, TextAlert } from "./styles"
+import { 
+     Container, 
+     TopContainer,
+     TitleContainer,
+     MainTitle,
+     SubTitle,
+     Btn,
+     VideoContainer,
+     WaveContainer,
+     BgVerde,
+     SolutionText,
+     InfoSolutionView,
+     ViewFunciona,
+     ViewCards,
+     TitleImpact,
+     TitleFunciona,
+     Planos,
+     Title,
+     ServicosContainer,
+     ContainerDepoimento,
+     ViewCardsDepoimento,
+     ImagemDepoimento,
+     FormSubTitle,
+     FormContainer,
+     FormRes,
+     ResInput,
+     FormButton,
+     ViewForm,
+     ViewCardsPlan,
+     TextAlert
+     } from "./styles"
 import Funciona from "../../components/Funciona"
 import Plano from "../../components/Plano"
 import Beneficios from "../../components/Beneficios"
-import Ana from "../../assets/Ana.png"
-import FabianaDepoimento from "../../assets/FabianaDepoimento.png"
+
+import Ana from "../../assets/AnaCircle.png"
+import FabianaCircle from "../../assets/FabianaCircle.png"
+import Depoimento from "../../components/Depoimento"
 
 
 const ColetaSele = () => {
@@ -52,6 +84,11 @@ const ColetaSele = () => {
         {title: 'Com coleta quinzenal', description: 'Nós coletamos os seus resíduos recicláveis e orgânicos no conforto da sua casa!', valor: 'R$ 22,00/mês'},
         {title: 'Com coleta semanal', description: 'Nós coletamos os seus resíduos recicláveis e orgânicos conforto da sua casa!', valor: 'R$ 44,00/mês'}
 
+    ]
+
+    const depoimento = [
+        {text: 'Eu sou uma ativista do cuidado com o lixo, minha dinâmica antes de contratar a Realixo era de separar o lixo em quatro partes; (1) rejeitos, (2) recicláveis difíceis de reciclar (3) materiais mais nobres que podem ser reciclados ou principalmente reutilizados, (4) orgânicos para compostagem com minhocas;) Depois da Realixo, comecei a compostar muito mais e descobri como é gigante o volume dos orgânicos que eu rejeitava por não poder colocar nas minhocas. E o maior benefício é que posso fazer isso independente da coleta de lixo da minha cidade.', nome: 'Ana Borba, fundadora da Lixiki, idealizadora do manifesto #reutilizartransforma', image: Ana},
+        {text: 'Ser parte de algo maior que eu, que contribuirá com o meio ambiente e um planeta melhor. Com pequenas ações e com a ajuda da Realixo, consigo diminuir a minha pegada ecológica consideravelmente. Melhorei a minha alimentação, percebi isso com o aumento do resíduo orgânico no balde. O baldinho, que no começo ia bem vazio, hoje é entregue quase lotado. Direciono o lixo reciclável e orgânico para onde poderão ser beneficiados e reutilizados. No final, serão vários quilos a menos de lixo e um planeta mais saudável. Antes, os resíduos recicláveis eram entregues no condomínio onde moro. Eles afirmam que são de responsabilidade da prefeitura e que seriam reciclados, mas não sei se isso realmente acontece. Jã os orgânicos era, levados com o lixo comum', nome: 'Fabiana de Souza', image: FabianaCircle}
     ]
 
     const beneficios = [
@@ -124,9 +161,7 @@ const ColetaSele = () => {
                 <TitleContainer>
                     <MainTitle>Você pode ajudar a salvar o planeta com menos de R$0,75 por dia, sem sair de casa</MainTitle>
                     <SubTitle>Experimente o nosso serviço de Coleta de Resíduos Recicláveis e Orgânicos e comece a reduzir o seu impacto ambiental conosco.</SubTitle>
-                    <Btn onClick={() => {
-                        window.location.href = `https://wa.me/5511912417855`
-                    }}>Saiba Mais</Btn>
+                    
                 </TitleContainer>
 
                 
@@ -144,7 +179,9 @@ const ColetaSele = () => {
                     {Caixas?.map((item,index) => <Funciona key={index} icone={item?.icone} texto={item?.texto} />)}
 
                     </ViewCards>
-
+                    <Btn onClick={() => {
+                        window.location.href = `https://wa.me/5511912417855`
+                    }}>Saiba Mais</Btn>
 
             </ViewFunciona>
 
@@ -160,7 +197,7 @@ const ColetaSele = () => {
 
             <VideoContainer>
 
-                <iframe width="530" height="300" src="https://www.youtube.com/embed/oo5PAI_41qo" title="REALIXO - POR UMA CIDADE SUSTENTÁVEL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+            <iframe width="530" height="300" src="https://www.youtube.com/embed/AjRnp8zJvGY" title="REALIXO - POR UMA CIDADE SUSTENTÁVEL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
 
             </VideoContainer>
 
@@ -194,9 +231,10 @@ const ColetaSele = () => {
 
                 <ViewCardsDepoimento>
                 
-                <ImagemDepoimento src={Ana} />
-                <ImagemDepoimento src={FabianaDepoimento} />
                 
+                {
+                    depoimento?.map((item, index) => <Depoimento key={index} nome={item.nome} texto={item.text} image={item.image} />)
+                }
 
                 </ViewCardsDepoimento>
 

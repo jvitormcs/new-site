@@ -89,6 +89,9 @@ const AbraFili = () => {
 
                     </ViewCards>
 
+                    <Btn onClick={() => {
+                        window.location.href = `https://wa.me/5511912417855`
+                    }}>Saiba Mais</Btn>
 
             </ViewFunciona>
 

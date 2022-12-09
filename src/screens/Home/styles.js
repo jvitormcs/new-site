@@ -80,7 +80,10 @@ export const Btn = styled.button`
     padding: 6px 15px;
     border: none;
     border-radius: 20px;
-
+    @media only screen and (min-width: 319px) and (max-width: 450px) {
+    
+    padding: 12px 60px;
+}
     :hover{
         background-color: #027467;
     }
@@ -90,13 +93,29 @@ export const BtnBranco = styled.button`
 
     color: #00b09c;
     background-color: #f9f9f9;
-    padding: 6px 15px;
+    padding: 8px 17px;
+    margin-top: 15px;
     border: none;
     border-radius: 20px;
-
+    font-weight: 600;
+    @media only screen and (min-width: 319px) and (max-width: 450px) {
+    
+    padding: 12px 60px;
+}
     :hover{
         background-color: #027467;
     }
+
+    @media only screen and (min-width: 319px) and (max-width: 450px) {
+    
+    margin-top: 13px;
+    margin-left: -8px;
+    margin-bottom: 25px;
+    background-color: #f9f9f9;
+    padding: 10px 19px;
+
+}
+
 `;
 
 export const WaveContainer = styled.div`
@@ -117,9 +136,28 @@ export const BgVerde = styled.div`
 
     background-color: #00b09c;
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding-bottom: 50px;
     
+    @media only screen and (min-width: 319px) and (max-width: 450px) {
+        padding: 0rem;
+    .responsivel{
+
+        width: 100%;
+        
+    }
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+`;
+export const BgVerdeContainer = styled.div`
+     display: flex;
+    align-items: center;
+
     @media only screen and (min-width: 319px) and (max-width: 450px) {
         padding: 0rem;
     .responsivel{
@@ -134,6 +172,7 @@ export const BgVerde = styled.div`
 }
 
 `;
+
 
 export const TitleSolution= styled.h3`
     font-size: 2.75rem;

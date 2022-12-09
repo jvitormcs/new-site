@@ -18,8 +18,12 @@ background-position: top center;
 background-repeat: no-repeat;
 @media only screen and (min-width: 319px) and (max-width: 450px) {
     background-image: url(${ImagemBackgroundM}) ;
-    padding: 8% 1% 400px 1%;
+    background-position: top center;
+    
+    padding: 6% 1% 400px 1%;
+    margin-bottom: -300px;  
 
+    
 }
 `;
 
@@ -52,7 +56,7 @@ export const MainTitle = styled.h1`
 
 `;
 export const SubTitle = styled.p`
-
+font-weight: 500;
 color: #263238;
 
 `;
@@ -69,6 +73,10 @@ export const Btn = styled.button`
     :hover{
         background-color: #027467;
     }
+    @media only screen and (min-width: 319px) and (max-width: 450px) {
+    
+    padding: 12px 60px;
+}
 `;
 
 export const WaveContainer = styled.div`
@@ -130,6 +138,10 @@ export const ViewFunciona = styled.div`
     text-align: center;
     margin-bottom: 2rem;
     margin-top: 14rem;
+    @media only screen and (min-width: 319px) and (max-width: 450px) {
+    
+        margin-top: 8rem;
+}
 
 `
 

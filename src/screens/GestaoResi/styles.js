@@ -19,6 +19,7 @@ background-repeat: no-repeat;
 @media only screen and (min-width: 319px) and (max-width: 450px) {
     background-image: url(${ImagemBackgroundM}) ;
     padding: 8% 5% 400px 5%;
+    margin-bottom: -300px;
 }
 `;
 
@@ -79,6 +80,11 @@ export const Btn = styled.button`
     :hover{
         background-color: #027467;
     }
+
+    @media only screen and (min-width: 319px) and (max-width: 450px) {
+    
+    padding: 12px 60px;
+}
 `;
 
 export const WaveContainer = styled.div`
@@ -92,7 +98,7 @@ export const WaveContainer = styled.div`
     background-size: cover;
     padding: 20%;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: -50px
 }
 `;
 
@@ -126,6 +132,7 @@ export const ViewFunciona = styled.div`
 
     text-align: center;
     margin-bottom: 2rem;
+    
 
 `
 

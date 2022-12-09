@@ -19,6 +19,7 @@ background-repeat: no-repeat;
 @media only screen and (min-width: 319px) and (max-width: 450px) {
     background-image: url(${ImagemBackgroundM}) ;
     padding: 8% 5% 380px 5%;
+    margin-bottom: -300px;
 }
 `;
 
@@ -107,6 +108,7 @@ export const WaveContainer = styled.div`
     @media only screen and (min-width: 319px) and (max-width: 450px) {
     background-size: cover;
     padding: 20%;
+    padding-bottom: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -139,6 +141,7 @@ export const ViewFunciona = styled.div`
 
     text-align: center;
     margin-bottom: 2rem;
+    
     
 
 `
